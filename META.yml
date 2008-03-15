@@ -1,0 +1,21 @@
+--- 
+abstract: Implementation of managesieve protocol to manage sieve scripts
+author: Yves Agostini - Univ Metz <agostini@univ-metz.fr>
+distribution_type: module
+generated_by: Module::Install version 0.67
+license: perl
+meta-spec: 
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+  version: 1.3
+name: NET-Sieve
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Authen::SASL: 0
+  IO::Socket::INET6: 0
+  IO::Socket::SSL: 0
+  MIME::Base64: 0
+tests: t/*.t
+version: 0.01
