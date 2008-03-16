@@ -1,16 +1,16 @@
-package NET::Sieve;
+package Net::Sieve;
 use strict;
 use warnings;
 
 =head1 NAME
 
-NET::Sieve - Implementation of managesieve protocol to manage sieve scripts
+Net::Sieve - Implementation of managesieve protocol to manage sieve scripts
 
 =head1 SYNOPSIS
 
-  use NET::Sieve;
+  use Net::Sieve;
 
-  my $SieveServer = NET::Sieve->new (
+  my $SieveServer = Net::Sieve->new (
     server => 'imap.server.org',
     user => 'user',
     password => 'pass' ,
@@ -43,13 +43,13 @@ NET::Sieve - Implementation of managesieve protocol to manage sieve scripts
 
 =head1 DESCRIPTION
 
-B<NET::Sieve> is a package for clients for the "MANAGESIEVE" protocol, which is an Internet Draft protocol for manipulation of "Sieve" scripts in a repository.  More simply, NET::Sieve lets you control your mail-filtering rule files on a mail server.
+B<Net::Sieve> is a package for clients for the "MANAGESIEVE" protocol, which is an Internet Draft protocol for manipulation of "Sieve" scripts in a repository.  More simply, Net::Sieve lets you control your mail-filtering rule files on a mail server.
 
-B<NET::Sieve> supports the use of "TLS" via the "STARTTLS" command. B<NET::Sieve> open the connexion to the sieve server, methods allow to list all scripts, activate or deactivate scripts, read, delete or put scripts. 
+B<Net::Sieve> supports the use of "TLS" via the "STARTTLS" command. B<Net::Sieve> open the connexion to the sieve server, methods allow to list all scripts, activate or deactivate scripts, read, delete or put scripts. 
 
 Most of code come from the great Phil Pennock B<sieve-connect> command-line tool L<http://people.spodhuis.org/phil.pennock/software/>.
 
-See L<NET::Sieve::Script> to manipulate Sieve scripts content.
+See L<Net::Sieve::Script> to manipulate Sieve scripts content.
 
 =cut
 
@@ -81,12 +81,12 @@ my $DEBUGGING = 1;
 =head2 new
 
  Usage : 
-  my $SieveServer = NET::Sieve->new ( 
+  my $SieveServer = Net::Sieve->new ( 
     server => 'imap.server.org', 
     user => 'user', 
     password => 'pass' );
  Returns :
-  NET::Sieve object which contain current open socket 
+  Net::Sieve object which contain current open socket 
  Argument :
   server      : default localhost
   port        : default sieve(2000) 
@@ -747,7 +747,7 @@ See response in C<Verify return code:>
 
 =head1 SUPPORT
 
-Please report any bugs or feature requests to "bug-net-sieve at rt.cpan.org", or through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=NET-Sieve>. I will be notified, and then you'll automatically be notified of progress on your bug as I make changes.
+Please report any bugs or feature requests to "bug-net-sieve at rt.cpan.org", or through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Net-Sieve>. I will be notified, and then you'll automatically be notified of progress on your bug as I make changes.
 
 =head1 AUTHOR
 
@@ -763,11 +763,11 @@ it and/or modify it under the same terms as Perl itself.
 The full text of the license can be found in the
 LICENSE file included with this module.
 
-B<sieve-connect> source code is under a BSD-style license and re-licensed for NET::Sieve with permission of the author.
+B<sieve-connect> source code is under a BSD-style license and re-licensed for Net::Sieve with permission of the author.
 
 =head1 SEE ALSO
 
-L<NET::Sieve::Script>
+L<Net::Sieve::Script>
 
 =cut
 
