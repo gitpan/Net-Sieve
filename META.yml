@@ -14,4 +14,4 @@ requires:
   IO::Socket::SSL: 0
   MIME::Base64: 0
 tests: t/*.t
-version: 0.02
+version: 0.03
