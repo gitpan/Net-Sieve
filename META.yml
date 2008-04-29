@@ -9,9 +9,9 @@ no_index:
     - inc
     - t
 requires: 
-  Authen::SASL: 0
+  Authen::SASL: 2.11
   IO::Socket::INET6: 0
   IO::Socket::SSL: 0
   MIME::Base64: 0
 tests: t/*.t
-version: 0.03
+version: 0.04
