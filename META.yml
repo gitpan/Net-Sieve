@@ -1,7 +1,7 @@
 ---
 abstract: 'Implementation of managesieve protocol to manage sieve scripts'
 author:
-  - 'Yves Agostini - Univ Metz <agostini@univ-metz.fr>'
+  - 'Yves Agostini <yvesago@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
 configure_requires:
@@ -24,4 +24,4 @@ requires:
   MIME::Base64: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.09
+version: 0.10
